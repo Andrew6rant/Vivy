@@ -97,7 +97,7 @@ static void PreferencesChangedCallback(CFNotificationCenterRef center, void *obs
 	icon.layer.mask = fill; // add the fill to battery
 
 	self.pinColor = [UIColor clearColor]; // hide it again or the battery shows up again for some reason
-	self.bodyColor = [UIColor clearColor];
+	// self.bodyColor = [UIColor clearColor];
 	self.fillColor = [UIColor clearColor];
 }
 
