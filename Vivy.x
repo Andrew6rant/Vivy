@@ -27,7 +27,7 @@ static void PreferencesChangedCallback(CFNotificationCenterRef center, void *obs
 	[[UIDevice currentDevice] setBatteryMonitoringEnabled:true]; // make ios monitor the battery
 	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(getCurrentBattery) name:UIDeviceBatteryLevelDidChangeNotification object:nil]; // add observer for battery level
 	self.pinColor = [UIColor clearColor]; // hide the pin
-	self.bodyColor = [UIColor clearColor]; // hide the body. there's a joke in there somewhere
+	// self.bodyColor = [UIColor clearColor]; // hide the body. there's a joke in there somewhere
 	self.fillColor = [UIColor clearColor]; // hide the default fill
 	[self getCurrentBattery]; // get charge percent
 }
